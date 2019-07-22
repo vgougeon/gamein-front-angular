@@ -5,7 +5,17 @@ import { ContainerComponent } from './container.component';
 const routes: Routes = [
   {
     path: '',
-    component: ContainerComponent
+    component: ContainerComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: './views/home/home.module#HomeModule'
+      },
+      {
+        path: 'home',
+        loadChildren: './views/home/home.module#HomeModule'
+      }
+    ]
   }
 ];
 
