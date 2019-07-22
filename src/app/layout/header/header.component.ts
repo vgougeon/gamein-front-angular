@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  aside: any;
   constructor() { }
 
   ngOnInit() {
+    this.aside = {
+      open: true
+    }
+  }
+
+  toggle(){
+    this.aside.open = !this.aside.open
   }
 
 }
