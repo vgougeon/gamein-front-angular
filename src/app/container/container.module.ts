@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { ContainerRoutingModule } from './container-routing.module';
 import { ContainerComponent } from './container.component';
-import { HeaderModule } from '../layout/header/header.module';
+import { LayoutModule } from '../layout/layout.module';
 
 @NgModule({
   declarations: [ContainerComponent],
   imports: [
     CommonModule,
     ContainerRoutingModule,
-    HeaderModule
+    LayoutModule
   ]
 })
 export class ContainerModule { }

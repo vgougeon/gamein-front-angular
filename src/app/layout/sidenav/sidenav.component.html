@@ -1,0 +1,25 @@
+<section id="main">
+  <aside [class.aside-fold]="sidenav.open">
+      <div class="d-flex flex-column">
+        <a [routerLink]="'/home'" routerLinkActive="active">
+              <div class="button">
+                  <i class="fas fa-compass"></i> Home
+              </div>
+          </a>
+          <a [routerLink]="'/games'" routerLinkActive="active">
+              <div class="button">
+                  <i class="fas fa-gamepad"></i> Games
+              </div>
+          </a>
+          <a [routerLink]="'/contribute'" routerLinkActive="active">
+              <div class="button">
+                  <i class="fas fa-hands-helping"></i> Contribute
+              </div>
+          </a>
+      </div>
+      <div class="d-flex flex-column">
+      </div>
+  </aside>
+  <ng-content></ng-content>
+</section>
+

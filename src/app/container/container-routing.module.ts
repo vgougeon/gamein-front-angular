@@ -14,6 +14,10 @@ const routes: Routes = [
       {
         path: 'home',
         loadChildren: './views/home/home.module#HomeModule'
+      },
+      {
+        path: 'games',
+        loadChildren: './views/games/games.module#GamesModule'
       }
     ]
   }
